@@ -1,44 +1,32 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const Product = require('../models/Product');
+const Product = require("../models/Product");
 
-
-router.post('/', async (req, res) => {
-    try {
-
-    } catch (error) {
-
-    }
+router.post("/", async (req, res) => {
+  try {
+    const product = await Product.create(req.body);
+    res.status(210).json(product);
+  } catch (error) {
+    res.status(400).json({ message: error.message});
+  }
 });
 
-router.post('/', async (req, res) => {
-    try {
-
-    } catch (error) {
-
-    }
+router.post("/", async (req, res) => {
+  try {
+  } catch (error) {}
 });
 
-router.post('/', async (req, res) => {
-    try {
-
-    } catch (error) {
-
-    }
+router.post("/", async (req, res) => {
+  try {
+  } catch (error) {}
 });
 
-router.post('/', async (req, res) => {
-    try {
-
-    } catch (error) {
-
-    }
+router.post("/", async (req, res) => {
+  try {
+  } catch (error) {}
 });
 
-router.post('/', async (req, res) => {
-    try {
-
-    } catch (error) {
-
-    }
+router.post("/", async (req, res) => {
+  try {
+  } catch (error) {}
 });
