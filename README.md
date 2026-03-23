@@ -1,0 +1,1 @@
+Type node server to run this api on localhost:3000.  Test the classic CRUD operations at this address... http://localhost:3000/api/products/
