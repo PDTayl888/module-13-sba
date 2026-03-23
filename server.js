@@ -1,4 +1,4 @@
-const connectDB = require('./db/connection');
+const connectDB = require('./config/connection');
 
 const express = require('express');
 require('dotenv').config();
@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 connectDB();
 
 app.use(express.json());
-const bookRoutes = require('./routes/bookRoutes');
+const bookRoutes = require('./routes/productRoutes');
 
 app.use('/api/books', bookRoutes);
 
