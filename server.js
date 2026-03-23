@@ -10,7 +10,7 @@ connectDB();
 app.use(express.json());
 const bookRoutes = require('./routes/productRoutes');
 
-app.use('/api/books', bookRoutes);
+app.use('/api/products', bookRoutes);
 
 app.listen(PORT, () => {
     console.log(`SERVER RUNNING AT PORT ${PORT}`);
